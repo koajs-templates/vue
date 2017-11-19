@@ -1,5 +1,5 @@
 {
-  "name": "koa2-vue-boilerplate",
+  "name": "{{name}}",
   "version": "1.0.0",
   "description": "A Vue.js & Koa project",
   "private": true,
