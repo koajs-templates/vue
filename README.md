@@ -1,7 +1,5 @@
 # Koa2-vue-boilerplate
-> An admin application template using koa2 and vue.
-
-this boilerplate clone built with [vuejs-templates](https://github.com/vuejs-templates/webpack), based on [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
+> An web application template using koa2 and vue.
 
 ## Environments
 Make sure that you have Node.js v6 or newer and npm installed on your development machine. Because it will be better
@@ -69,7 +67,7 @@ $ npm run release
 
 ## Problem
 
-> Can't install node-sass ?
+> Can't install dependencies ?
 
 put this lines in you ~/.npmrc file and ` npm install ` again.
 
@@ -77,4 +75,5 @@ put this lines in you ~/.npmrc file and ` npm install ` again.
 sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
 phantomjs_cdnurl=https://npm.taobao.org/mirrors/phantomjs/
 electron_mirror=https://npm.taobao.org/mirrors/electron/
+chromedriver_cdnurl=https://cdn.npm.taobao.org/dist/chromedriver
 ```

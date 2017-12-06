@@ -1,5 +1,5 @@
 {
-  "extends": "eslint-config-egg",
+  "extends": "airbnb-base",
   "parserOptions": {
     "sourceType": "module"
   },

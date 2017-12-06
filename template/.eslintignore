@@ -1,7 +1,5 @@
-build/*.js
-config/*.js
-test
-node_modules/
-src/assets/iconfont
-dist/
-server/public
+/build/
+/config/
+/dist/
+/*.js
+/test/unit/coverage/

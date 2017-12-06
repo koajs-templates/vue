@@ -4,7 +4,7 @@
 
 |`npm <script>`     |Description|
 |-------------------|-----------|
-|`dev`              |Serves your app at `localhost:3000`|
+|`dev`              |Serves your app at `localhost:8080`|
 |`server`           |Start backend API server at `localhost:4000`|
 |`start`            |Serves your app with production mode|
 |`build`            |Builds the static assets|

@@ -1,14 +1,11 @@
-import koaRouter from 'koa-router';
-import authCtrl from '../controllers/user';
-import tableCtrl from '../controllers/table';
+import Router from 'koa-router';
 
-const router = koaRouter();
+const router = Router();
 
-router
-  .post('/user/login', authCtrl.postLogin)
-  .get('/user/logout', authCtrl.postLogout)
-  .get('/user', authCtrl.getUserInfo)
+router.prefix('/api');
 
-  .get('/table/list', tableCtrl.getList);
+router.get('/hello', async (ctx) => {
+  ctx.body = 'hello world';
+});
 
 export default router;

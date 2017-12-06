@@ -1,11 +1,14 @@
 require('babel-core/register')({
   presets: [
-    ['env', {
-      targets: {
-        node: true
-      }
-    }]
+    [
+      'env',
+      {
+        targets: {
+          node: true,
+        },
+      },
+    ],
   ],
   ignore: /node_modules\/(?!koa-*)/,
 });
-require('./server/app.js');
+require('./server/app');
