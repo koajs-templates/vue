@@ -1,11 +1,12 @@
 import Router from 'koa-router';
 
-const router = Router();
+export default function () {
+  const router = Router();
 
-router.prefix('/api');
+  router.prefix('/api');
 
-router.get('/hello', async (ctx) => {
-  ctx.body = 'hello world';
-});
-
-export default router;
+  router.get('/hello', async (ctx) => {
+    ctx.body = 'Hello Vue';
+  });
+  return router.routes();
+}

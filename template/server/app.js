@@ -17,7 +17,7 @@ app.use(
   }),
 );
 app.use(bodyparser());
-app.use(api.routes());
+app.use(api());
 app.use(historyApiFallback());
 
 app.listen(PORT, IP, () => {
