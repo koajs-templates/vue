@@ -11,6 +11,7 @@ const app = new Koa();
 const PORT = process.env.HTTP_PORT || 4000;
 const IP = process.env.HTTP_IP || undefined;
 
+app.use(historyApiFallback());
 app.use(
   serve(path.resolve(__dirname, '../public'), {
     maxage: 1000 * 60 * 60 * 24 * 30, // a month
@@ -18,7 +19,6 @@ app.use(
 );
 app.use(bodyparser());
 app.use(api());
-app.use(historyApiFallback());
 
 app.listen(PORT, IP, () => {
   console.log(`app started at http://${IP || 'localhost'}:${PORT}`);
