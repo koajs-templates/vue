@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>{{msg}}</h1>
+    <h1>\{{msg}}</h1>
     <h2>Learn more about
       <a href="https://github.com/koajs-templates/vue.git">koajs-templates/vue</a>.
     </h2>
